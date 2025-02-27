@@ -1,0 +1,5 @@
+input:focus,
+button:focus,
+.reject:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,12 @@
+footer a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+footer .fab {
+  transition: color 0.3s;
+}
+
+footer .fab:hover {
+  color: #007bff;
+}

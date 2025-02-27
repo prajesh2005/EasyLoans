@@ -1,0 +1,79 @@
+<lib-toastify-toast-container></lib-toastify-toast-container>
+<div class="loan-application container mt-4">
+  <div *ngIf="loanApplication" class="card p-4 shadow">
+    <h2 class="text-center mb-4">Application Details of {{loanApplication.applicantName}}</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>Application ID:</strong> {{ loanApplication.applicationId }}</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <p><strong>Applicant Name:</strong> {{ loanApplication.applicantName }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>Address:</strong> {{ loanApplication.applicantAddress }}</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <p><strong>Phone:</strong> {{ loanApplication.applicantPhone }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>Email:</strong> {{ loanApplication.applicantEmail }}</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <p><strong>Profession:</strong> {{ loanApplication.applicantProfession }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>PAN:</strong> {{ loanApplication.applicantPAN }}</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <p><strong>No. of Dependents:</strong> {{ loanApplication.noOfDependents }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>Application Date:</strong> {{ loanApplication.applicationDate | date: "dd-MM-yyyy" }}</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <p><strong>Status:</strong> {{ loanApplication.applicationStatus }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>Loan Plan ID:</strong> {{ loanApplication.loanPlanId }}</p>
+      </div>
+      <div *ngIf="loanPlan" class="col-md-6 mb-3">
+        <p><strong>Loan Plan Type:</strong> {{ loanPlan.loanPlanType }}</p>
+      </div>
+    </div>
+    <div *ngIf="loanPlan" class="row">
+      <div class="col-md-6 mb-3">
+        <p><strong>Loan Plan Name:</strong> {{ loanPlan.loanPlanName }}</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <p><strong>Supporting Document:</strong>
+          <button class="btn btn-primary mx-2 btn-sm" (click)="downloadSupportingDocument()">Download</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions my-4 text-center">
+    <button class="btn btn-success mx-2" (click)="approveApplication()">Approve</button>
+    <button class="btn btn-danger" (click)="rejectApplication()">Reject</button>
+  </div>
+
+  <div *ngIf="showRejectionReason" class="mt-4">
+    <div class="form-group">
+      <textarea [(ngModel)]="rejectionReason" class="form-control reject" placeholder="Enter rejection reason"
+        required></textarea>
+    </div>
+    <div class="text-center my-2">
+      <button class="btn btn-danger" (click)="submitRejection()">Submit Rejection</button>
+    </div>
+  </div>
+</div>

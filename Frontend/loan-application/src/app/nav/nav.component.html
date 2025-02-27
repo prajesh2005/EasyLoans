@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" routerLink="">EasyLoans</a> -->
+    <a class="navbar-brand" href="#">EasyLoans</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <!-- <a class="nav-link" routerLink="">Home</a> -->
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown dropdown-list" routerLink="">
+          <a class="nav-link dropdown-toggle" href="#" id="loanDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Loans
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="loanDropdown">
+            <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+            <li><a class="dropdown-item " href="#">Home Loan</a></li>
+            <li><a class="dropdown-item " href="#">Education Loan</a></li>
+            <li><a class="dropdown-item " href="#">Student Loan</a></li>
+            <li><a class="dropdown-item" href="#">Medical Loan</a></li>
+            <li><a class="dropdown-item" href="#">Wedding Loan</a></li>
+            <li><a class="dropdown-item " href="#">Vehicle Loan</a></li>
+            <li><a class="dropdown-item " href="#">Business Loan</a></li>
+            <li><a class="dropdown-item " href="#">Gold Loan</a></li>
+            <li><a class="dropdown-item " href="#">Agricultural Loan</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" *ngIf="!isManager">
+          <a class="nav-link" routerLink="/create">New Application</a>
+        </li>
+        <li class="nav-item" *ngIf="isManager">
+          <a class="nav-link" routerLink='app'>Applications</a>
+        </li>
+      </ul>
+      <!-- <form class="d-flex ">
+        <button class="btn btn-light" type="button">
+          <a class="nav-link" [routerLink]="['/',status]">{{status|titlecase}}</a>
+        </button>
+      </form> -->
+      <form class="d-flex ">
+        <button *ngIf="!isLoggedIn()" class="btn btn-light" type="button">
+          <a class="nav-link" [routerLink]="['/login']">Login</a>
+        </button>
+        <button *ngIf="isLoggedIn()" class="btn btn-light" type="button" data-bs-toggle="modal"
+          data-bs-target="#logoutModal" (click)="logout()">
+          <a class="nav-link">Logout</a>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- modal -->
+<div class="modal fade" id="logoutModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logoutModalLabel">Logout Successful</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You are logged out successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="navigateHome()">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+.dropdown-menu .dropdown-item,
+dropdown-list {
+  color: #f6f6f6;
+}
+
+.dropdown-menu:hover .dropdown-item:hover,
+dropdown-list:hover {
+  color: #ffcc00;
+}
+
+.dropdown-menu .dropdown-item:active {
+  background-color: gray !important;
+  color: inherit;
+}

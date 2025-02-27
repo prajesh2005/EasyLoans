@@ -1,0 +1,13 @@
+.toggle-password-btn {
+  transition: color 0.3s;
+}
+
+.toggle-password-btn:hover {
+  color: orangered;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}

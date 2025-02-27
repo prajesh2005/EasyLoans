@@ -1,0 +1,496 @@
+2025-02-20 10:19:00 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:19:00 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:19:00 -  INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-20 10:19:00 -  INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-20 10:19:03 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:19:03 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:19:05 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:19:05 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:19:05 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:19:05 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:19:05 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4493 ms
+2025-02-20 10:19:05 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:19:05 -  INFO [restartedMain] o.h.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-20 10:19:05 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:19:06 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:19:06 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2025-02-20 10:19:07 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ad6ef49
+2025-02-20 10:19:07 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-20 10:19:07 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:19:07 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:19:07 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:19:08 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:19:08 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:19:09 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:19:09 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:19:10 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:19:11 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:19:11 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:19:11 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 11.932 seconds (process running for 12.972)
+2025-02-20 10:23:57 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:23:57 -  INFO [Thread-5] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:23:58 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:23:58 -  INFO [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:23:58 -  INFO [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-20 10:23:58 -  INFO [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-20 10:23:58 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:23:58 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:23:59 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:23:59 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:24:00 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:24:00 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:24:00 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:24:00 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:24:00 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1876 ms
+2025-02-20 10:24:00 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:24:00 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:24:00 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:24:00 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2025-02-20 10:24:00 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38255679
+2025-02-20 10:24:00 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2025-02-20 10:24:00 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:24:00 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:24:00 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:24:00 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:24:00 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:24:01 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:24:01 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:24:01 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:24:01 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:24:01 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:24:01 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 3.525 seconds (process running for 302.985)
+2025-02-20 10:24:01 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-20 10:25:10 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:25:10 -  INFO [Thread-7] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:25:10 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:25:10 -  INFO [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:25:10 -  INFO [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-02-20 10:25:10 -  INFO [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-02-20 10:25:10 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:25:10 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:25:11 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:25:11 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:25:11 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:25:11 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:25:11 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:25:11 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:25:11 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 541 ms
+2025-02-20 10:25:11 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:25:11 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:25:11 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:25:11 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+2025-02-20 10:25:11 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ebbec23
+2025-02-20 10:25:11 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+2025-02-20 10:25:11 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:25:11 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:25:11 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:25:11 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:25:11 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:25:12 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:25:12 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:25:12 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:25:12 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:25:12 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:25:12 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 1.837 seconds (process running for 373.94)
+2025-02-20 10:25:12 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-2] c.c.l.s.MyUserDetailsService - Loading user by username: prajesh
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-2] c.c.l.s.MyUserDetailsService - Loaded user: prajesh
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=prajesh, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[BANKMANAGER]]
+2025-02-20 10:25:42 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=prajesh, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[BANKMANAGER]]
+2025-02-20 10:25:43 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.generateToken(String)
+2025-02-20 10:25:43 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.generateToken(String) with result: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmFqZXNoIiwiaWF0IjoxNzQwMDI3MzQzLCJleHAiOjE3NDAwMzI3NDN9.TnL5Z-4b6HSj46IEupT7Q3qPf-JezjbDXLpd-CW52hM
+2025-02-20 10:25:43 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.MyUserDetailsService.getUserRole(String)
+2025-02-20 10:25:43 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.MyUserDetailsService.getUserRole(String) with result: BANKMANAGER
+2025-02-20 10:25:43 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: Map com.cognizant.loan_application.controller.MyUserController.login(AuthRequest) with result: {role=BANKMANAGER, username=prajesh, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmFqZXNoIiwiaWF0IjoxNzQwMDI3MzQzLCJleHAiOjE3NDAwMzI3NDN9.TnL5Z-4b6HSj46IEupT7Q3qPf-JezjbDXLpd-CW52hM}
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: prajesh
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.s.MyUserDetailsService - Loading user by username: prajesh
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.s.MyUserDetailsService - Loaded user: prajesh
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=prajesh, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[BANKMANAGER]]
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: List com.cognizant.loan_application.service.LoanApplicationsService.getAllNewLoanApplications()
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.s.LoanApplicationsService - Fetching all new loan applications
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.s.LoanApplicationsService - Fetched 13 new loan applications
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: List com.cognizant.loan_application.service.LoanApplicationsService.getAllNewLoanApplications() with result: [GetLoanApplicationDTO(applicationId=65, applicantName=Shreyash Jawalkar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=shreyash14@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=750000, NoOfDependents=0, applicationDate=2025-02-04, applicationStatus=New, loanPlanId=5), GetLoanApplicationDTO(applicationId=74, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Analyst, applicantEmail=pranoti@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=450000, NoOfDependents=4, applicationDate=2025-02-05, applicationStatus=New, loanPlanId=6), GetLoanApplicationDTO(applicationId=75, applicantName=Dharmesh Dhande, applicantAddress=Nagpur, applicantProfession=Student, applicantEmail=dharmesh@gmail.com, applicantPhone=9018291012, applicantPAN=DHSNA2891N, monthlyIncome=40000, NoOfDependents=2, applicationDate=2025-02-06, applicationStatus=New, loanPlanId=4), GetLoanApplicationDTO(applicationId=78, applicantName=Jay Nagpure, applicantAddress=Chandrapur, applicantProfession=Engineer, applicantEmail=jay@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=400000, NoOfDependents=3, applicationDate=2025-02-08, applicationStatus=New, loanPlanId=4), GetLoanApplicationDTO(applicationId=79, applicantName=Shreyash Jawalkar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=shreyash@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=750000, NoOfDependents=3, applicationDate=2025-02-09, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=80, applicantName=Jay Nagpure, applicantAddress=Chandrapur, applicantProfession=Engineer, applicantEmail=jay2@gmail.com, applicantPhone=3483442839, applicantPAN=RHDNA8392A, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-09, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=84, applicantName=Pranav Ninawe, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=pranav@gmail.com, applicantPhone=3838371901, applicantPAN=GBFND9876A, monthlyIncome=400000, NoOfDependents=2, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=2), GetLoanApplicationDTO(applicationId=85, applicantName=Pranav Ninawe, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=pranav1@gmail.com, applicantPhone=3893943904, applicantPAN=PNSAN3922K, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=87, applicantName=bharat gaur, applicantAddress=vizag, applicantProfession=Engineer, applicantEmail=bharat@gmail.com, applicantPhone=9582839201, applicantPAN=BHGAS8972M, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=88, applicantName=Arup Konhai, applicantAddress=Vizag, applicantProfession=Engineer, applicantEmail=arup@gmail.com, applicantPhone=9404729202, applicantPAN=AHRJQ9449F, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=5), GetLoanApplicationDTO(applicationId=89, applicantName=Rohit Miyapurram, applicantAddress=Hyderabad, applicantProfession=Engineer, applicantEmail=rohit@gmail.com, applicantPhone=9484752018, applicantPAN=RHDNA8392A, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-11, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=90, applicantName=Abhishek Rajgure, applicantAddress=Akola, applicantProfession=Private Job, applicantEmail=abhishek@gmail.com, applicantPhone=9382920383, applicantPAN=BHGAS8972M, monthlyIncome=400000, NoOfDependents=2, applicationDate=2025-02-11, applicationStatus=New, loanPlanId=2), GetLoanApplicationDTO(applicationId=92, applicantName=Rajesh Dhande, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=rajesh@gmail.com, applicantPhone=9876543210, applicantPAN=HSHSJ8192N, monthlyIncome=40000, NoOfDependents=4, applicationDate=2025-02-11, applicationStatus=New, loanPlanId=7)]
+2025-02-20 10:25:47 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.getAllNewLoanApplications(Authentication) with result: <200 OK OK,[GetLoanApplicationDTO(applicationId=65, applicantName=Shreyash Jawalkar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=shreyash14@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=750000, NoOfDependents=0, applicationDate=2025-02-04, applicationStatus=New, loanPlanId=5), GetLoanApplicationDTO(applicationId=74, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Analyst, applicantEmail=pranoti@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=450000, NoOfDependents=4, applicationDate=2025-02-05, applicationStatus=New, loanPlanId=6), GetLoanApplicationDTO(applicationId=75, applicantName=Dharmesh Dhande, applicantAddress=Nagpur, applicantProfession=Student, applicantEmail=dharmesh@gmail.com, applicantPhone=9018291012, applicantPAN=DHSNA2891N, monthlyIncome=40000, NoOfDependents=2, applicationDate=2025-02-06, applicationStatus=New, loanPlanId=4), GetLoanApplicationDTO(applicationId=78, applicantName=Jay Nagpure, applicantAddress=Chandrapur, applicantProfession=Engineer, applicantEmail=jay@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=400000, NoOfDependents=3, applicationDate=2025-02-08, applicationStatus=New, loanPlanId=4), GetLoanApplicationDTO(applicationId=79, applicantName=Shreyash Jawalkar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=shreyash@gmail.com, applicantPhone=9876543210, applicantPAN=GBFND9876A, monthlyIncome=750000, NoOfDependents=3, applicationDate=2025-02-09, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=80, applicantName=Jay Nagpure, applicantAddress=Chandrapur, applicantProfession=Engineer, applicantEmail=jay2@gmail.com, applicantPhone=3483442839, applicantPAN=RHDNA8392A, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-09, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=84, applicantName=Pranav Ninawe, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=pranav@gmail.com, applicantPhone=3838371901, applicantPAN=GBFND9876A, monthlyIncome=400000, NoOfDependents=2, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=2), GetLoanApplicationDTO(applicationId=85, applicantName=Pranav Ninawe, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=pranav1@gmail.com, applicantPhone=3893943904, applicantPAN=PNSAN3922K, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=87, applicantName=bharat gaur, applicantAddress=vizag, applicantProfession=Engineer, applicantEmail=bharat@gmail.com, applicantPhone=9582839201, applicantPAN=BHGAS8972M, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=88, applicantName=Arup Konhai, applicantAddress=Vizag, applicantProfession=Engineer, applicantEmail=arup@gmail.com, applicantPhone=9404729202, applicantPAN=AHRJQ9449F, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-10, applicationStatus=New, loanPlanId=5), GetLoanApplicationDTO(applicationId=89, applicantName=Rohit Miyapurram, applicantAddress=Hyderabad, applicantProfession=Engineer, applicantEmail=rohit@gmail.com, applicantPhone=9484752018, applicantPAN=RHDNA8392A, monthlyIncome=400001, NoOfDependents=3, applicationDate=2025-02-11, applicationStatus=New, loanPlanId=1), GetLoanApplicationDTO(applicationId=90, applicantName=Abhishek Rajgure, applicantAddress=Akola, applicantProfession=Private Job, applicantEmail=abhishek@gmail.com, applicantPhone=9382920383, applicantPAN=BHGAS8972M, monthlyIncome=400000, NoOfDependents=2, applicationDate=2025-02-11, applicationStatus=New, loanPlanId=2), GetLoanApplicationDTO(applicationId=92, applicantName=Rajesh Dhande, applicantAddress=Nagpur, applicantProfession=Engineer, applicantEmail=rajesh@gmail.com, applicantPhone=9876543210, applicantPAN=HSHSJ8192N, monthlyIncome=40000, NoOfDependents=4, applicationDate=2025-02-11, applicationStatus=New, loanPlanId=7)],[]>
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.generateToken(String)
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.generateToken(String) with result: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmFub3RpIiwiaWF0IjoxNzQwMDI3MzU5LCJleHAiOjE3NDAwMzI3NTl9.NZdjaQgdJ0f0Ck-LOYjgVvV6vOnye-M9pISaRpRT8As
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.MyUserDetailsService.getUserRole(String)
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.MyUserDetailsService.getUserRole(String) with result: CUSTOMER
+2025-02-20 10:25:59 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: Map com.cognizant.loan_application.controller.MyUserController.login(AuthRequest) with result: {role=CUSTOMER, username=pranoti, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmFub3RpIiwiaWF0IjoxNzQwMDI3MzU5LCJleHAiOjE3NDAwMzI3NTl9.NZdjaQgdJ0f0Ck-LOYjgVvV6vOnye-M9pISaRpRT8As}
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.s.LoanApplicationsService - Created new loan application: LoanApplication(applicationId=93, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantPhone=4393489342, applicantEmail=pranoti@gmail.com, applicantPAN=PGDNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:28:27 IST 2025, loanPlanId=3, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:28:27 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with result: LoanApplication(applicationId=93, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantPhone=4393489342, applicantEmail=pranoti@gmail.com, applicantPAN=PGDNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:28:27 IST 2025, loanPlanId=3, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:28:27 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:28:27 -  INFO [http-nio-5001-exec-7] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <200 OK OK,Loan application submitted successfully,[]>
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:32:30 -  WARN [http-nio-5001-exec-9] c.c.l.s.LoanApplicationsService - Each new loan application must be for a different loan plan for same PAN number: PGDNA1234A
+2025-02-20 10:32:30 - ERROR [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Each new loan application must be for a different loan plan.
+2025-02-20 10:32:30 -  INFO [http-nio-5001-exec-9] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Each new loan application must be for a different loan plan.,[]>
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.s.LoanApplicationsService - Created new loan application: LoanApplication(applicationId=94, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Analyst, applicantPhone=4393489342, applicantEmail=pranoti@gmail.com, applicantPAN=PGDNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:32:41 IST 2025, loanPlanId=6, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:32:41 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with result: LoanApplication(applicationId=94, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Analyst, applicantPhone=4393489342, applicantEmail=pranoti@gmail.com, applicantPAN=PGDNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:32:41 IST 2025, loanPlanId=6, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:32:41 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:32:41 -  INFO [http-nio-5001-exec-10] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <200 OK OK,Loan application submitted successfully,[]>
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:33:19 -  WARN [http-nio-5001-exec-1] c.c.l.s.LoanApplicationsService - Maximum of 2 new loan applications allowed for a person: PGDNA1234A
+2025-02-20 10:33:19 - ERROR [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Maximum of 2 new loan applications allowed.
+2025-02-20 10:33:19 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Maximum of 2 new loan applications allowed.,[]>
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti2@gmail.com
+2025-02-20 10:33:27 -  WARN [http-nio-5001-exec-2] c.c.l.s.LoanApplicationsService - Maximum of 2 new loan applications allowed for a person: PGDNA1234A
+2025-02-20 10:33:27 - ERROR [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Maximum of 2 new loan applications allowed.
+2025-02-20 10:33:27 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Maximum of 2 new loan applications allowed.,[]>
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti2@gmail.com
+2025-02-20 10:33:29 -  WARN [http-nio-5001-exec-3] c.c.l.s.LoanApplicationsService - Maximum of 2 new loan applications allowed for a person: PGDNA1234A
+2025-02-20 10:33:29 - ERROR [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Maximum of 2 new loan applications allowed.
+2025-02-20 10:33:29 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Maximum of 2 new loan applications allowed.,[]>
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.s.LoanApplicationsService - Created new loan application: LoanApplication(applicationId=95, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantPhone=9876543210, applicantEmail=pranoti@gmail.com, applicantPAN=PMGNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:33:40 IST 2025, loanPlanId=7, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:33:40 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with result: LoanApplication(applicationId=95, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Engineer, applicantPhone=9876543210, applicantEmail=pranoti@gmail.com, applicantPAN=PMGNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:33:40 IST 2025, loanPlanId=7, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:33:40 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:33:40 -  INFO [http-nio-5001-exec-4] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <200 OK OK,Loan application submitted successfully,[]>
+2025-02-20 10:37:08 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:37:08 -  INFO [Thread-11] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:37:08 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:37:08 -  INFO [Thread-11] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:37:08 -  INFO [Thread-11] c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-02-20 10:37:08 -  INFO [Thread-11] c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-02-20 10:37:08 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:37:08 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:37:09 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:37:09 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:37:10 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:37:10 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:37:10 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:37:10 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:37:10 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1227 ms
+2025-02-20 10:37:10 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:37:10 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:37:10 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:37:10 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-4 - Starting...
+2025-02-20 10:37:10 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62ee2e13
+2025-02-20 10:37:10 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-4 - Start completed.
+2025-02-20 10:37:10 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:37:10 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:37:10 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:37:10 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:37:10 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:37:10 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:37:10 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:37:10 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:37:11 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:37:11 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:37:11 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 2.442 seconds (process running for 1092.591)
+2025-02-20 10:37:11 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-20 10:37:40 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:37:40 -  INFO [Thread-15] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:37:40 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:37:40 -  INFO [Thread-15] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:37:40 -  INFO [Thread-15] c.z.h.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-02-20 10:37:40 -  INFO [Thread-15] c.z.h.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-02-20 10:37:41 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:37:41 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:37:41 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:37:41 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:37:41 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:37:41 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:37:41 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:37:41 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:37:41 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 459 ms
+2025-02-20 10:37:41 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:37:41 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:37:41 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:37:41 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-5 - Starting...
+2025-02-20 10:37:41 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78022f5f
+2025-02-20 10:37:41 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-5 - Start completed.
+2025-02-20 10:37:41 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:37:41 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:37:41 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:37:41 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:37:41 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:37:42 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:37:42 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:37:42 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:37:42 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:37:42 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:37:42 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 1.524 seconds (process running for 1123.78)
+2025-02-20 10:37:42 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-20 10:37:45 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:37:46 -  INFO [Thread-19] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:37:46 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:37:46 -  INFO [Thread-19] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:37:46 -  INFO [Thread-19] c.z.h.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-02-20 10:37:46 -  INFO [Thread-19] c.z.h.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-02-20 10:37:46 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:37:46 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:37:46 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:37:46 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:37:46 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:37:46 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:37:46 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:37:46 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:37:46 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 435 ms
+2025-02-20 10:37:46 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:37:46 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:37:46 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:37:46 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-6 - Starting...
+2025-02-20 10:37:46 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ddf833d
+2025-02-20 10:37:46 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-6 - Start completed.
+2025-02-20 10:37:46 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:37:46 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:37:46 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:37:46 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:37:46 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:37:47 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:37:47 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:37:47 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:37:47 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:37:47 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:37:47 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 1.374 seconds (process running for 1128.86)
+2025-02-20 10:37:47 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:40:20 -  WARN [http-nio-5001-exec-1] c.c.l.s.LoanApplicationsService - Maximum of 2 new loan applications allowed for email: pranoti@gmail.com
+2025-02-20 10:40:20 - ERROR [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Maximum of 2 new loan applications allowed.
+2025-02-20 10:40:20 -  INFO [http-nio-5001-exec-1] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Maximum of 2 new loan applications allowed.,[]>
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:40:28 -  WARN [http-nio-5001-exec-2] c.c.l.s.LoanApplicationsService - Maximum of 2 new loan applications allowed for email: pranoti@gmail.com
+2025-02-20 10:40:28 - ERROR [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Maximum of 2 new loan applications allowed.
+2025-02-20 10:40:28 -  INFO [http-nio-5001-exec-2] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Maximum of 2 new loan applications allowed.,[]>
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti@gmail.com
+2025-02-20 10:40:30 -  WARN [http-nio-5001-exec-5] c.c.l.s.LoanApplicationsService - Maximum of 2 new loan applications allowed for email: pranoti@gmail.com
+2025-02-20 10:40:30 - ERROR [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with exception: Maximum of 2 new loan applications allowed.
+2025-02-20 10:40:30 -  INFO [http-nio-5001-exec-5] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <500 INTERNAL_SERVER_ERROR Internal Server Error,Error processing loan application: Maximum of 2 new loan applications allowed.,[]>
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: String com.cognizant.loan_application.service.JwtService.extractUsername(String)
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: String com.cognizant.loan_application.service.JwtService.extractUsername(String) with result: pranoti
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String)
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.s.MyUserDetailsService - Loading user by username: pranoti
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.s.MyUserDetailsService - Loaded user: pranoti
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: UserDetails com.cognizant.loan_application.service.MyUserDetailsService.loadUserByUsername(String) with result: org.springframework.security.core.userdetails.User [Username=pranoti, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[CUSTOMER]]
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails)
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: Boolean com.cognizant.loan_application.service.JwtService.validateToken(String,UserDetails) with result: true
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Executing method: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile)
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.s.LoanApplicationsService - Creating new loan application for email: pranoti2@gmail.com
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.s.LoanApplicationsService - Created new loan application: LoanApplication(applicationId=96, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Doctor, applicantPhone=4393489342, applicantEmail=pranoti2@gmail.com, applicantPAN=PGDNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:40:40 IST 2025, loanPlanId=2, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:40:40 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: LoanApplication com.cognizant.loan_application.service.LoanApplicationsService.createNewApplication(LoanApplicationDTO,MultipartFile) with result: LoanApplication(applicationId=96, applicantName=pranoti ghotekar, applicantAddress=Nagpur, applicantProfession=Doctor, applicantPhone=4393489342, applicantEmail=pranoti2@gmail.com, applicantPAN=PGDNA1234A, monthlyIncome=450000, noOfDependents=3, applicationDate=Thu Feb 20 10:40:40 IST 2025, loanPlanId=2, applicationStatus=New, applicationReviewedOn=Thu Feb 20 10:40:40 IST 2025, supportingDocumentsPath=uploads\dummy.pdf)
+2025-02-20 10:40:40 -  INFO [http-nio-5001-exec-3] c.c.l.a.LoggingAspect - Method executed: ResponseEntity com.cognizant.loan_application.controller.LoanApplicationsController.createLoanApplication(Authentication,String,MultipartFile) with result: <200 OK OK,Loan application submitted successfully,[]>
+2025-02-20 10:41:20 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:41:20 -  INFO [Thread-23] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:41:20 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:41:20 -  INFO [Thread-23] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:41:20 -  INFO [Thread-23] c.z.h.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-02-20 10:41:20 -  INFO [Thread-23] c.z.h.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-02-20 10:41:20 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:41:20 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:41:20 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:41:20 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:41:21 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:41:21 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:41:21 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:41:21 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:41:21 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 516 ms
+2025-02-20 10:41:21 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:41:21 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:41:21 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:41:21 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-7 - Starting...
+2025-02-20 10:41:21 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d55433d
+2025-02-20 10:41:21 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-7 - Start completed.
+2025-02-20 10:41:21 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:41:21 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:41:21 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:41:21 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:41:21 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:41:21 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:41:21 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:41:21 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:41:22 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:41:22 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:41:22 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 1.516 seconds (process running for 1343.407)
+2025-02-20 10:41:22 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-20 10:41:42 -  INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-20 10:41:42 -  INFO [Thread-27] o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 10:41:42 -  INFO [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete
+2025-02-20 10:41:42 -  INFO [Thread-27] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:41:42 -  INFO [Thread-27] c.z.h.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-02-20 10:41:42 -  INFO [Thread-27] c.z.h.HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-02-20 10:41:42 -  INFO [restartedMain] c.c.l.LoanApplication - Starting LoanApplication using Java 17.0.12 with PID 22476 (C:\Users\2366869\eclipse-workspace\LoanApplication-stage2\target\classes started by 2366869 in C:\Users\2366869\eclipse-workspace\LoanApplication-stage2)
+2025-02-20 10:41:42 -  INFO [restartedMain] c.c.l.LoanApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 10:41:42 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 10:41:42 -  INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2025-02-20 10:41:42 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 5001 (http)
+2025-02-20 10:41:42 -  INFO [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2025-02-20 10:41:42 -  INFO [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-20 10:41:42 -  INFO [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 10:41:42 -  INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 468 ms
+2025-02-20 10:41:43 -  INFO [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 10:41:43 -  INFO [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-20 10:41:43 -  INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 10:41:43 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-8 - Starting...
+2025-02-20 10:41:43 -  INFO [restartedMain] c.z.h.p.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a556789
+2025-02-20 10:41:43 -  INFO [restartedMain] c.z.h.HikariDataSource - HikariPool-8 - Start completed.
+2025-02-20 10:41:43 -  WARN [restartedMain] o.h.o.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 10:41:43 -  WARN [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-20 10:41:43 -  INFO [restartedMain] o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 10:41:43 -  INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 10:41:43 -  INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 10:41:43 -  INFO [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-20 10:41:43 -  WARN [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-20 10:41:43 -  WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 10:41:43 -  INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-20 10:41:43 -  INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 5001 (http) with context path '/'
+2025-02-20 10:41:43 -  INFO [restartedMain] c.c.l.LoanApplication - Started LoanApplication in 1.415 seconds (process running for 1365.131)
+2025-02-20 10:41:43 -  INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

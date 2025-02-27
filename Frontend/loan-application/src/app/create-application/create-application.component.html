@@ -1,0 +1,212 @@
+<lib-toastify-toast-container></lib-toastify-toast-container>
+<div class="container mt-3 mb-4">
+  <h1 class="text-center mb-4">Loan Application Form</h1>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <form [formGroup]="newLoanApplicationForm" (ngSubmit)="createLoanApplication()">
+            <div class="mb-3">
+              <label for="applicantName" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="applicantName" formControlName="applicantName" required>
+              <div class="text-danger"
+                *ngIf="newLoanApplicationForm.controls['applicantName'].invalid && (newLoanApplicationForm.controls['applicantName'].touched || newLoanApplicationForm.controls['applicantName'].dirty)">
+                <span *ngIf="newLoanApplicationForm.controls['applicantName'].errors?.['required']">Full Name is
+                  Required!</span>
+                <span *ngIf="newLoanApplicationForm.controls['applicantName'].errors?.['minlength']">Applicant name must
+                  be at least 10 characters long</span>
+                <br>
+                <span *ngIf="newLoanApplicationForm.controls['applicantName'].errors?.['pattern']">Applicant name must
+                  contain only letters and spaces</span>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="applicantAddress" class="form-label">Applicant Address:</label>
+              <input type="text" class="form-control" id="applicantAddress" formControlName="applicantAddress" required>
+              <div class="text-danger"
+                *ngIf="newLoanApplicationForm.controls['applicantAddress'].invalid && (newLoanApplicationForm.controls['applicantAddress'].touched || newLoanApplicationForm.controls['applicantAddress'].dirty)">
+                <span *ngIf="newLoanApplicationForm.controls['applicantAddress'].errors?.['required']">Applicant Address
+                  is Required!</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6  mb-3">
+                <label for="applicantEmail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="applicantEmail" formControlName="applicantEmail" required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['applicantEmail'].invalid && (newLoanApplicationForm.controls['applicantEmail'].touched || newLoanApplicationForm.controls['applicantEmail'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['applicantEmail'].errors?.['required']">Email is
+                    Required!</span>
+                  <span *ngIf="newLoanApplicationForm.controls['applicantEmail'].errors?.['email']">Invalid Email
+                    Format!</span>
+                </div>
+              </div>
+              <div class="col-md-6  mb-3">
+                <label for="applicantPhone" class="form-label">Phone Number:</label>
+                <input type="tel" class="form-control" id="applicantPhone" formControlName="applicantPhone" required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['applicantPhone'].invalid && (newLoanApplicationForm.controls['applicantPhone'].touched || newLoanApplicationForm.controls['applicantPhone'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['applicantPhone'].errors?.['required']">Phone Number is
+                    Required!</span>
+                  <span *ngIf="newLoanApplicationForm.controls['applicantPhone'].errors?.['pattern']">Phone number must
+                    be exactly 10 digits long</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6  mb-3">
+                <label for="applicantPAN" class="form-label">PAN:</label>
+                <input type="text" class="form-control" id="applicantPAN" formControlName="applicantPAN" required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['applicantPAN'].invalid && (newLoanApplicationForm.controls['applicantPAN'].touched || newLoanApplicationForm.controls['applicantPAN'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['applicantPAN'].errors?.['required']">PAN is
+                    Required!</span>
+                  <span *ngIf="newLoanApplicationForm.controls['applicantPAN'].errors?.['pattern']">PAN must be exactly
+                    10 characters long and in the format ABCDE1234F</span>
+                </div>
+              </div>
+              <div class="col-md-6  mb-3">
+                <label for="noOfDependents" class="form-label">Number of Dependents:</label>
+                <input type="number" class="form-control" id="noOfDependents" min="0" formControlName="noOfDependents"
+                  required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['noOfDependents'].invalid && (newLoanApplicationForm.controls['noOfDependents'].touched || newLoanApplicationForm.controls['noOfDependents'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['noOfDependents'].errors?.['required']">Number of
+                    Dependents is Required!</span>
+                  <span *ngIf="newLoanApplicationForm.controls['noOfDependents'].errors?.['min']">No of dependents
+                    cannot be negative</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6  mb-3">
+                <label for="monthlyIncome" class="form-label">Monthly Income:</label>
+                <input type="number" class="form-control" id="monthlyIncome" formControlName="monthlyIncome" min="0"
+                  required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['monthlyIncome'].invalid && (newLoanApplicationForm.controls['monthlyIncome'].touched || newLoanApplicationForm.controls['monthlyIncome'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['monthlyIncome'].errors?.['required']">Monthly Income is
+                    Required!</span>
+                  <span *ngIf="newLoanApplicationForm.controls['monthlyIncome'].errors?.['min']">Monthly Income
+                    cannot be negative</span>
+                </div>
+              </div>
+              <div class="col-md-6  mb-3">
+                <label for="applicantProfession" class="form-label">Profession:</label>
+                <select id="applicantProfession" class="form-control" formControlName="applicantProfession" required
+                  (change)="onProfessionChange($event)">
+                  <option value="Engineer">Engineer</option>
+                  <option value="Doctor">Doctor</option>
+                  <option value="Lawyer">Lawyer</option>
+                  <option value="Student">Student</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['applicantProfession'].invalid && (newLoanApplicationForm.controls['applicantProfession'].touched || newLoanApplicationForm.controls['applicantProfession'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['applicantProfession'].errors?.['required']">Profession
+                    is Required!</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3" *ngIf="showCustomProfessionField">
+                <label for="customProfession" class="form-label">Please specify:</label>
+                <input type="text" class="form-control" id="customProfession" formControlName="customProfession"
+                  required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['customProfession'].invalid && (newLoanApplicationForm.controls['customProfession'].touched || newLoanApplicationForm.controls['customProfession'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['customProfession'].errors?.['required']">Custom
+                    Profession is Required!</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row ">
+              <!-- <div class="col-md-6  mb-3">
+                <label for="applicationDate" class="form-label">Application Date:</label>
+                <input type="date" class="form-control" id="applicationDate" [min]='minDate' [max]="maxDate"
+                  formControlName="applicationDate" required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['applicationDate'].invalid && (newLoanApplicationForm.controls['applicationDate'].touched || newLoanApplicationForm.controls['applicationDate'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['applicationDate'].errors?.['required']">Application Date
+                    is Required!</span>
+                </div>
+              </div> -->
+              <div class="col-md-6  mb-3">
+                <label for="applicationDate" class="form-label">Application Date:</label>
+                <input type="text" class="form-control" id="applicationDate"
+                  [value]="newLoanApplicationForm.controls['applicationDate'].value|date:'dd-MM-yyyy'" readonly>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['applicationDate'].invalid && (newLoanApplicationForm.controls['applicationDate'].touched || newLoanApplicationForm.controls['applicationDate'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['applicationDate'].errors?.['required']">Application Date
+                    is Required!</span>
+                </div>
+              </div>
+              <div class="col-md-6  mb-3">
+                <label for="loanPlanId" class="form-label">Loan Plan:</label>
+                <!-- <input type="number" class="form-control" id="loanPlanId" min="1" formControlName="loanPlanId" required> -->
+                <select id="loanPlanId" class="form-control" formControlName="loanPlanId" required>
+                  <option value="1">1- Personal Loan</option>
+                  <option value="2">2- Home Loan</option>
+                  <option value="3">3- Education Loan</option>
+                  <option value="4">4- Student Loan</option>
+                  <option value="5">5- Medical Loan</option>
+                  <option value="6">6- Wedding Loan</option>
+                  <option value="7">7- Vehicle Loan</option>
+                  <option value="8">8- Business Loan</option>
+                  <option value="9">9- Gold Loan</option>
+                  <option value="10">10- Agricultural Loan</option>
+                </select>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['loanPlanId'].invalid && (newLoanApplicationForm.controls['loanPlanId'].touched || newLoanApplicationForm.controls['loanPlanId'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['loanPlanId'].errors?.['required']">Loan Plan ID is
+                    Required!</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- <div class="col-md-12  mb-3">
+                <label for="supportingDocuments" class="form-label">Supporting Documents:</label>
+                <input type="file" class="form-control" id="supportingDocuments" (change)="onFileChange($event)"
+                  required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['supportingDocuments'].invalid && (newLoanApplicationForm.controls['supportingDocuments'].touched || newLoanApplicationForm.controls['supportingDocuments'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['supportingDocuments'].errors?.['required']">Supporting
+                    Document is
+                    Required!</span>
+                </div>
+              </div> -->
+              <div class="col-md-12 mb-3">
+                <label for="supportingDocuments" class="form-label">Supporting Documents:</label>
+                <input type="file" class="form-control" id="supportingDocuments" (change)="onFileChange($event)"
+                  required>
+                <div class="text-danger"
+                  *ngIf="newLoanApplicationForm.controls['supportingDocuments'].invalid && (newLoanApplicationForm.controls['supportingDocuments'].touched || newLoanApplicationForm.controls['supportingDocuments'].dirty)">
+                  <span *ngIf="newLoanApplicationForm.controls['supportingDocuments'].errors?.['required']">Supporting
+                    Document is
+                    Required!</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg" [disabled]="newLoanApplicationForm.invalid">Submit
+                Application</button>
+            </div>
+          </form>
+          <div *ngIf="newLoanApplicationResponse" class="mt-3">
+            <!-- <p class="text-success" *ngIf="newLoanApplicationResponse.success">{{ newLoanApplicationResponse.message }}
+            </p> -->
+            <p class="text-danger text-center" *ngIf="!newLoanApplicationResponse.success">{{
+              newLoanApplicationResponse.message }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

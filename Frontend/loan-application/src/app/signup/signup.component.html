@@ -1,0 +1,55 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="row border rounded-5 p-3 bg-white shadow box-area" style="max-width: 500px; width: 100%;">
+    <form [formGroup]="registerForm" class="login">
+      <div class="col-md-12 right-box mx-auto">
+        <div class="row align-items-center">
+          <div class="header-text mb-4">
+            <h2 class="text-center">Register</h2>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" formControlName="username" class="form-control form-control-lg bg-light fs-6"
+              placeholder="Username">
+          </div>
+          <div class="text-danger mb-3"
+            *ngIf="registerForm.controls['username'].invalid && (registerForm.controls['username'].touched || registerForm.controls['username'].dirty)">
+            <span *ngIf="registerForm.controls['username'].errors?.['required']">Username is required!</span>
+            <span *ngIf="registerForm.controls['username'].errors?.['minlength']">Username must be at least 6
+              characters long.</span>
+          </div>
+          <div class="input-group mb-3">
+            <input [type]="hidePassword ? 'password' : 'text'" formControlName="password"
+              class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+            <button type="button" class="btn btn-outline-secondary bg-light border toggle-password-btn"
+              (click)="togglePasswordVisibility()">
+              <i class="fa" [ngClass]="{'fa-eye': hidePassword, 'fa-eye-slash': !hidePassword}"></i>
+            </button>
+          </div>
+          <div class="text-danger mb-3"
+            *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].touched || registerForm.controls['password'].dirty)">
+            <span *ngIf="registerForm.controls['password'].errors?.['required']">Password is required!</span>
+            <span *ngIf="registerForm.controls['password'].errors?.['minlength']">Password must be at least 6
+              characters long.</span>
+          </div>
+          <div class="input-group mb-3">
+            <input [type]="hideConfirmPassword ? 'password' : 'text'" formControlName="confirmPassword"
+              class="form-control form-control-lg bg-light fs-6" placeholder="Confirm Password">
+            <button type="button" class="btn btn-outline-secondary bg-light border toggle-password-btn"
+              (click)="toggleConfirmPasswordVisibility()">
+              <i class="fa" [ngClass]="{'fa-eye': hideConfirmPassword, 'fa-eye-slash': !hideConfirmPassword}"></i>
+            </button>
+          </div>
+          <div class="input-group mb-3">
+            <button class="btn btn-lg btn-primary mx-auto fs-6" [disabled]="registerForm.invalid"
+              (click)="onSubmit()">Register</button>
+          </div>
+          <div class="row text-center">
+            <small>Already have an account? <a routerLink="/login">Login</a></small>
+          </div>
+          <div *ngIf="userExistsMessage" class="alert alert-danger mt-3 text-center">
+            {{ userExistsMessage }}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
